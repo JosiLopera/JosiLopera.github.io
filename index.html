@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>portafolio</title>
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="src/css/fontawesome.css">
+	<script src="lib/jquery.js"></script>
+	<script src="lib/preload.js"></script>
+	<script src="lib/raf.js"></script>
+	<script src="lib/tweenMax.js"></script>
+	<script src="lib/text.js"></script>
+	<script src="lib/circularProgress.js"></script>
+	
+	
+</head>
+<body state="off" data="on">
+	<div id="menu" class="menu tMenu" state="off">
+		<div class="menuBar tMenu" id="bar1"></div>
+		<div class="menuBar tMenu" id="bar2"></div>
+		<div class="menuBar tMenu" id="bar3"></div>
+	</div>
+	<div id="navRight">
+		<div id="tMenu" class="titles">Menu</div>
+		<div id="boxMenu">
+			<div id="bProfil" class="eleMenu eleMenuAct">Profil</div>
+			<div id="bWorks" class="eleMenu">Works</div>
+			<div id="bSkills" class="eleMenu">Skills</div>
+			<div id="bContact" class="eleMenu">Contact</div>
+		</div>
+		<div id="tWorks" class="titles">Last Works</div>
+		<div id="boxWorks">
+			<div id="eleWork1" class="eleWorks">
+				<div class="eleMask">
+					<a href="#" class="eleViewBtn">
+						<i class="view fa fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<div id="eleWork2" class="eleWorks">
+				<div class="eleMask">
+					<a href="#" class="eleViewBtn">
+						<i class="view fa fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<div id="eleWork3" class="eleWorks">
+				<div class="eleMask">
+					<a href="#" class="eleViewBtn">
+						<i class="view fa fa-github"></i>
+					</a>
+				</div>
+			</div>
+			<div id="eleWork4" class="eleWorks">
+				<div class="eleMask">
+					<a href="#" class="eleViewBtn">
+						<i class="view fa fa-link"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="tSocial" class="titles">Social</div>
+		<div id="boxWorks">
+			<button class="share-toggle-button tMenu">
+				<i class="share-icon fa fa-user-secret tMenu"></i>
+			</button>
+			<ul class="share-items">
+				<li class="share-item">
+					<a href="#" class="share-button tMenu">
+						<i class="share-icon fa fa-facebook tMenu"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#" class="share-button tMenu">
+						<i class="share-icon fa fa-twitter tMenu"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#" class="share-button tMenu">
+						<i class="share-icon fa fa-github tMenu"></i>
+					</a>
+				</li>
+				<li class="share-item">
+					<a href="#" class="share-button tMenu">
+						<i class="share-icon fa fa-linkedin tMenu"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="fullpage">
+	<canvas id="canvas" width="1000" height="500" style="display: block;"></canvas>
+		<div id="controls" class="tControls" data="off">
+            <div id="title">More than a party (15-03-14)</div>
+            <label for="vol_btn">Volume: </label>
+            <input id="vol_btn" class="tControls" type="range" min="0" max="100" value="50" oninput="app.spec.changeVolume(this);">
+            <div id="mute" data="off" class="tControls">Unmute</div>
+            <div id="cMenu" class="tControls" state="off">
+                <div class="tControls cMenuBar" id="cBar1"></div>
+                <div class="tControls cMenuBar" id="cBar2"></div>
+                <div class="tControls cMenuBar" id="cBar3"></div>
+            </div>
+		</div>
+        <div id="soundBox"></div>
+		<div id="logo">
+            <svg viewbox="0 0 2100 300">
+                <symbol id="s-text">
+                    <text id="textLogo" text-anchor="middle" x="30%" y="30%" dy=".35em">
+                        Josimar Lopera
+                    </text>
+                </symbol>
+                <use xlink:href="#s-text" class="line"></use>
+                <use xlink:href="#s-text" class="line"></use>
+                <use xlink:href="#s-text" class="line"></use>
+                <use xlink:href="#s-text" class="line"></use>
+                <use xlink:href="#s-text" class="line"></use>
+            </svg>
+        </div>
+		<div id="main">
+			<div id="profil" class="boxes boxesBack">
+				<div id="closeProfil" class="close">X</div>
+				<h2 id="o" class="eleProfil">Hello!</h2>
+				<p class="eleProfil">My name is Josimar, i'm 25 years old and i'm a Front-end and Back-end developer student at L'école Multimédia, Paris-France. I'm fluent with html5/css3, JavaScript, jQuery and continue to learn PHP. I also mastery some CMS as Wordpress and Drupal 7. I'm so attracted by the new technologies, by the great animations and by the clean and minimalist desings.<br \> Web development is much more than a passion for me! I love the great music as EBM, i make some music in FL Studio, Cubase and Pro tools, i try to mix on my Traktor Console too. It's a natural need to create, to compose, to play, to assamble, to put together. Everytime i'm looking for the new opportunities for starting a new project, for to get new experience, for to learn something new and for to develop my skills. I remain at your disposal for any internship or freelance contract.</p>
+			</div>
+		    <div id="works" class="boxes boxesBack">
+				<div id="closeWorks" class="close">X</div>
+				<div id="wb1" class="worksBlock">
+			    	<div id="work1" class="worksBox">
+			    		<div class="mask">
+							<h3>Los Espanoles</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-github"></i>
+							</a>
+							<p>Facebook Game</p>
+			    		</div>
+			    	</div>
+			    	<div id="work2" class="worksBox">
+			    		<div class="mask">
+			    			<h3>PongMotion</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-github"></i>
+							</a>
+							<p>LeapMotion Game</p>
+			    		</div>			    		
+			    	</div>
+			    	<div id="work3" class="worksBox">
+			    		<div class="mask">
+			    			<h3>Sensile</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-link"></i>
+							</a>
+							<p>Website Wordpress (StudioCassette)</p>
+			    		</div>			    		
+			    	</div>
+				</div>
+				<div id="wb2" class="worksBlock">
+			    	<div id="work4" class="worksBox">
+			    		<div class="mask">
+			    			<h3>Selification</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-github"></i>
+							</a>
+							<p>Facebook Application</p>
+			    		</div>			    		
+			    	</div>
+			    	<div id="work5" class="worksBox">
+			    		<div class="mask">
+			    			<h3>Le VGG</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-link"></i>
+							</a>
+							<p>Website Wordpress</p>
+			    		</div>			    		
+			    	</div>
+			    	<div id="work6" class="worksBox">
+			    		<div class="mask">
+			    			<h3>Raid Latécoère</h3>	
+							<a href="#" class="viewBtn">
+								<i class="view fa fa-link"></i>
+							</a>
+							<p>Website Wordpress (StudioCassette)</p>
+			    		</div>			
+			    	</div>
+				</div>
+		    </div>
+		    <div id="skills" class="boxes boxesBack">
+				<div id="closeSkills" class="close">X</div>
+				<div id="sb1" class="skillsBlock">
+					<div class="skillbar clearfix " data-percent="80%">
+						<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+						<div class="skillbar-bar" style="background: #e67e22;"></div>
+						<div class="skill-bar-percent">80%</div>
+					</div> 
+
+					<div class="skillbar clearfix " data-percent="85%">
+						<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+						<div class="skillbar-bar" style="background: #3498db;"></div>
+						<div class="skill-bar-percent">85%</div>
+					</div> 
+
+					<div class="skillbar clearfix " data-percent="85%">
+						<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+						<div class="skillbar-bar" style="background: #2c3e50;"></div>
+						<div class="skill-bar-percent">85%</div>
+					</div>
+
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-title" style="background: #a6120e;"><span>AngularJS</span></div>
+						<div class="skillbar-bar" style="background: #dd1a16;"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div> 
+
+					<div class="skillbar clearfix " data-percent="50%">
+						<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+						<div class="skillbar-bar" style="background: #5a68a5;"></div>
+						<div class="skill-bar-percent">50%</div>
+					</div> 
+
+					<div class="skillbar clearfix " data-percent="75%">
+						<div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+						<div class="skillbar-bar" style="background: #525252;"></div>
+						<div class="skill-bar-percent">75%</div>
+					</div> 
+
+					<div class="skillbar clearfix " data-percent="60%">
+						<div class="skillbar-title" style="background: #124e8c;"><span>Drupal</span></div>
+						<div class="skillbar-bar" style="background: #4288d0;"></div>
+						<div class="skill-bar-percent">60%</div>
+					</div>
+		    	</div>
+				<div id="sb2" class="skillsBlock">
+					<h2>Languages</h2>
+					<div id="lanSkills"></div>
+		    		<img id="spain" src='src/img/spain.png'>
+		    		<img id="france" src='src/img/france.png'>
+		    		<img id="england" src='src/img/england.png'>
+		    	</div>	
+		    </div>
+		   	<div id="contact" class="boxes boxesBack">
+				<div id="closeContact" class="close">X</div>
+		   		
+		   	</div>
+		</div>
+		<div id="loadBox">
+			<div id="progressbar">
+	  			<img id="gif" src="src/img/load.gif">
+			</div>
+		</div>
+	</div>
+
+
+</body>
+	<script src="src/js/preload.js"></script>
+	<script src="src/js/app.js"></script>
+	<script src="src/js/easing.js"></script>
+	<script src="src/js/settings.js"></script>
+	<script src="src/js/spec.js"></script>
+	<script src="src/js/boxes.js"></script>
+	<script src="src/js/ui.js"></script>
+	<script src="src/js/social.js"></script>
+	<script src="src/js/profil.js"></script>
+	<script src="src/js/works.js"></script>
+	<script src="src/js/skills.js"></script>
+	<script src="src/js/contact.js"></script>
+
+	<script>
+
+		$("#closeProfil").on('click', function(){
+			$(this).animate({ top: '100px' }, 600, 'easeOutBounce');
+			console.log($(this));
+		})
+	</script>
+</html>
