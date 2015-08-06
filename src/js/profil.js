@@ -19,10 +19,10 @@
 		animation: function(){
 				
 			app.settings.tlp.to(this.profilBox, this.speed, {opacity: 1, top: 20+'%', ease:Back.easeOut.config(1.5)}, "label--1")
-						.to(this.profilBox, this.speed, {left: 10+'%', ease:Power3.easeNone}, "label--2")
-						.to(this.profilBox, this.speed, {'background-color': 'rgba(0,0,0,0.8)',width: 80+'%', height: 70+'%', padding: 5+'%', ease:Back.easeOut.config(1.5)}, "label--3")
+						.to(this.profilBox, this.speed, {left: 15+'%', ease:Power3.easeNone}, "label--2")
+						.to(this.profilBox, this.speed, {'background-color': 'rgba(0,0,0,0.8)',width: 70+'%', height: 60+'%', padding: 5+'%', ease:Back.easeOut.config(1.5)}, "label--3")
 						.to(this.eleProfil, this.speed, {opacity: 1, delay: 0.3, ease:Back.easeOut.config(1.5)}, "label--3")
-						.to(this.closeProfil, this.speed, {opacity: 1, left: 94+'%', ease:Back.easeOut.config(1.5)}, "label--4");
+						.to(this.closeProfil, this.speed, {opacity: 1, left: 92+'%', ease:Back.easeOut.config(1.5)}, "label--4");
 		},
 
 		on: function(){

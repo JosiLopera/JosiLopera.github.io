@@ -41,7 +41,7 @@
 					app.social.closeShareMenu();
 					tl.reverse();
 					menu.attr('state','off');
-					body.attr('state','off');
+					ui.body.attr('state','off');
 				};
 			});
 
@@ -52,7 +52,7 @@
 						app.social.closeShareMenu();
 						tl.reverse(); 
 	                    menu.attr('state','off');
-						body.attr('state','off');
+						ui.body.attr('state','off');
 	                } 
 	            }              
         	});	

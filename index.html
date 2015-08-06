@@ -32,28 +32,28 @@
 		<div id="boxWorks">
 			<div id="eleWork1" class="eleWorks">
 				<div class="eleMask">
-					<a href="#" class="eleViewBtn">
-						<i class="view fa fa-github"></i>
+					<a href="http://localhost:8888/los-espanoles/" target="_blank" class="eleViewBtn">
+						<i class="view fa fa-link"></i>
 					</a>
 				</div>
 			</div>
 			<div id="eleWork2" class="eleWorks">
 				<div class="eleMask">
-					<a href="#" class="eleViewBtn">
+					<a href="https://github.com/JosiLopera/LeapMotionPong" target="_blank" class="eleViewBtn">
 						<i class="view fa fa-github"></i>
 					</a>
 				</div>
 			</div>
 			<div id="eleWork3" class="eleWorks">
 				<div class="eleMask">
-					<a href="#" class="eleViewBtn">
-						<i class="view fa fa-github"></i>
+					<a href="http://localhost:8888/Selfication/" target="_blank" class="eleViewBtn">
+						<i class="view fa fa-link"></i>
 					</a>
 				</div>
 			</div>
 			<div id="eleWork4" class="eleWorks">
 				<div class="eleMask">
-					<a href="#" class="eleViewBtn">
+					<a href="http://localhost:8888/levidegreniergraphique/" target="_blank" class="eleViewBtn">
 						<i class="view fa fa-link"></i>
 					</a>
 				</div>
@@ -121,7 +121,10 @@
 			<div id="profil" class="boxes boxesBack">
 				<div id="closeProfil" class="close">X</div>
 				<h2 id="o" class="eleProfil">Hello!</h2>
-				<p class="eleProfil">My name is Josimar, i'm 25 years old and i'm a Front-end and Back-end developer student at L'école Multimédia, Paris-France. I'm fluent with html5/css3, JavaScript, jQuery and continue to learn PHP. I also mastery some CMS as Wordpress and Drupal 7. I'm so attracted by the new technologies, by the great animations and by the clean and minimalist desings.<br \> Web development is much more than a passion for me! I love the great music as EBM, i make some music in FL Studio, Cubase and Pro tools, i try to mix on my Traktor Console too. It's a natural need to create, to compose, to play, to assamble, to put together. Everytime i'm looking for the new opportunities for starting a new project, for to get new experience, for to learn something new and for to develop my skills. I remain at your disposal for any internship or freelance contract.</p>
+				<p class="eleProfil">
+				Je m’appelle Josimar Lopera, j’ai 26 ans et je suis Développeur front- end et  back-end de L’École Multimédia.</p> 
+				<p class="eleProfil">Je suis très attiré  par les nouvelles technologies et son développement dans ses divers langages. </p>
+				<p class="eleProfil">En ce moment je suis à la recherche d’une expérience professionnel en alternance.</p>
 			</div>
 		    <div id="works" class="boxes boxesBack">
 				<div id="closeWorks" class="close">X</div>
@@ -129,8 +132,8 @@
 			    	<div id="work1" class="worksBox">
 			    		<div class="mask">
 							<h3>Los Espanoles</h3>	
-							<a href="#" class="viewBtn">
-								<i class="view fa fa-github"></i>
+							<a href="http://localhost:8888/los-espanoles/" target="_blank" class="viewBtn">
+								<i class="view fa fa-link"></i>
 							</a>
 							<p>Facebook Game</p>
 			    		</div>
@@ -138,8 +141,8 @@
 			    	<div id="work2" class="worksBox">
 			    		<div class="mask">
 			    			<h3>PongMotion</h3>	
-							<a href="#" class="viewBtn">
-								<i class="view fa fa-github"></i>
+							<a href="http://localhost:8888/LeapMotionPong-master/" target="_blank" class="viewBtn">
+								<i class="view fa fa-link"></i>
 							</a>
 							<p>LeapMotion Game</p>
 			    		</div>			    		
@@ -147,7 +150,7 @@
 			    	<div id="work3" class="worksBox">
 			    		<div class="mask">
 			    			<h3>Sensile</h3>	
-							<a href="#" class="viewBtn">
+							<a href="http://sensile.studiocassette.com/" target="_blank" class="viewBtn">
 								<i class="view fa fa-link"></i>
 							</a>
 							<p>Website Wordpress (StudioCassette)</p>
@@ -158,8 +161,8 @@
 			    	<div id="work4" class="worksBox">
 			    		<div class="mask">
 			    			<h3>Selification</h3>	
-							<a href="#" class="viewBtn">
-								<i class="view fa fa-github"></i>
+							<a href="http://localhost:8888/Selfication/" target="_blank" class="viewBtn">
+								<i class="view fa fa-link"></i>
 							</a>
 							<p>Facebook Application</p>
 			    		</div>			    		
@@ -167,7 +170,7 @@
 			    	<div id="work5" class="worksBox">
 			    		<div class="mask">
 			    			<h3>Le VGG</h3>	
-							<a href="#" class="viewBtn">
+							<a href="http://localhost:8888/levidegreniergraphique/" target="_blank" class="viewBtn">
 								<i class="view fa fa-link"></i>
 							</a>
 							<p>Website Wordpress</p>
@@ -176,7 +179,7 @@
 			    	<div id="work6" class="worksBox">
 			    		<div class="mask">
 			    			<h3>Raid Latécoère</h3>	
-							<a href="#" class="viewBtn">
+							<a href="http://www.raid-latecoere.org/" target="_blank" class="viewBtn">
 								<i class="view fa fa-link"></i>
 							</a>
 							<p>Website Wordpress (StudioCassette)</p>
@@ -242,11 +245,7 @@
 		   		
 		   	</div>
 		</div>
-		<div id="loadBox">
-			<div id="progressbar">
-	  			<img id="gif" src="src/img/load.gif">
-			</div>
-		</div>
+	
 	</div>
 
 
@@ -266,9 +265,5 @@
 
 	<script>
 
-		$("#closeProfil").on('click', function(){
-			$(this).animate({ top: '100px' }, 600, 'easeOutBounce');
-			console.log($(this));
-		})
 	</script>
 </html>
